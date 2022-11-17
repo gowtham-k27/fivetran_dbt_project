@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: Snowflake_Sample_Data
+    description: 'A sample data provided by Mitillion'
+    database: DM_DB
+    schema: MATILLION
+    tables:
+      - name: ALL_CUSTOMERS
+        description: 'Extracting data from all customer table of Matillion schema'
+
