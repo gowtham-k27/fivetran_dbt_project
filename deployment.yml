@@ -10,9 +10,9 @@ jobs:
    timeout: 2h30m
    steps:
      - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
-       command: dbt run # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
+       command: dbt run -m matillion_sample_data__all_customer # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
      - name: test models
-       command: dbt test # This example will run all your tests..
+       command: dbt test -m matillion_sample_data__all_customer # This example will run all your tests..
 
 
 
